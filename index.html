@@ -35,8 +35,33 @@
             git add index.html
         </div>
         <div class="add_multipleFiles">
-            git --global
+            git add --all
             Using --all instead of individual filenames will stage all changes (new, modified, and deleted) files.
+            The shorthand command for git add --all is git add -A
         </div>
+        <h2>Now all 3 files are added to the Staging Environment, and we are ready to do our first commit.</h2>
+        <div class="git_commit">
+            git commit -m "message"
+            <P>Since we have finished our work, we are ready move from stage to commit for our repo.
+
+                Adding commits keep track of our progress and changes as we work. Git considers each commit change point or "save point". It is a point in the project you can go back to if you find a bug, or want to make a change.
+                
+                When we commit, we should always include a message.
+                By adding clear messages to each commit, it is easy for yourself (and others) to see what has changed and when.
+            </P>
+            <div class="commit_without_stage">
+                <h2>git commit -a -m "Updated Index.html file"</h2>
+                <p>
+                    Sometimes, when you make small changes, using the staging environment seems like a waste of time. It is possible to commit changes directly, skipping the staging environment. The -a option will automatically stage every changed, already tracked file.
+
+Let's add a small update to index.html
+                </p>
+                <h3>git status --short</h3>
+                <p>use the --short option to see the changes in a more compact way</p>
+            </div>
+            <div class="commit_log">
+                <h2>git log</h2>
+                <p>To view the history of commits for a repository, you can use the log command</p>
+            </div>
     </body>
 </html>
